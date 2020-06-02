@@ -1,0 +1,196 @@
+/* navigation */
+#navbar{
+    flex-direction: column;
+    height: 160px;
+    
+}
+#navbar ul li{
+    font-size: 1.5rem;
+
+}
+    #navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    margin-left: 1px;
+}
+#navbar ul li {
+    /* color: bisque; */
+    list-style: none;
+    padding-right: 16px;
+    border-radius: 20px;
+    font-size: 1.6rem;
+    margin-right: -8px;
+    
+}
+#navbar ul li a{
+    font-size: 1.2rem;
+    
+}
+/* home section */
+    #home{
+    height: 334px;
+    padding: 2px 2px 2px 2px ;
+    margin:-44px 2px 2px 2px ;
+    }
+    #home h1{
+        font-size: 2rem;
+        /* border: 2px solid red; */
+        margin: 121px 2px 2px 2px ;
+    }
+    #home p{
+        font-size: 1.5rem;
+        /* border: 2px solid red; */
+        /* margin: 121px 2px 2px 2px ; */
+    }
+    #home::before{
+    content: "";
+    position: absolute;
+    height:90%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+/* service section */
+    #services{
+    flex-direction: column;
+    }
+    #services .box {
+        border: 2px solid green;
+        margin:auto ;
+        margin-left: 7px;
+        margin-right: 29px;
+        margin-bottom: 25px;
+        display: block;
+        padding: 13px;
+        border-radius: 23px;
+        background-color: rgb(218, 206, 206);
+       }
+    #services .box2 {
+        border: 2px solid green;
+        margin: auto;
+        margin-right: 29px;
+        margin-left: -14px;
+        margin-bottom: 25px;
+        display: block;
+        padding: 13px;
+        border-radius: 23px;
+        background-color: rgb(218, 206, 206);
+       }
+       #services .box3 {
+        border: 2px solid green;
+        margin:auto ;
+        margin-left: -29px;
+        margin-right: 29px;
+        margin-bottom: 25px;
+        display: block;
+        padding: 13px;
+        border-radius: 23px;
+        background-color: rgb(218, 206, 206);
+       }
+       #services .box img{
+        height: 118px;
+        width:103px;
+        margin: 2px 2px 5px 88px;
+        display: block;
+        border: 2px solid crimson;
+        border-radius: 23px;
+    
+    }
+    #services .box2 img{
+        height: 118px;
+        width: 103px;
+        margin: 2px 2px 5px 88px;
+        display: block;
+        border: 2px solid crimson;
+        border-radius: 23px;
+    
+    }
+    #services .box3 img{
+        height: 118px;
+        width: 103px;
+        margin: 2px 2px 5px 88px;
+        display: block;
+        border: 2px solid crimson;
+        border-radius: 23px;
+    
+    }
+    .ourservice{
+        font-size: 3rem;
+        padding: 15px;
+        margin: 182px 2px 2px 2px;
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+/* client section */
+    #client-section{
+    flex-wrap: wrap;
+
+    }
+    #client-section::before{
+        content: "";
+        background:url(top-view-of-food-1640772.jpg) no-repeat center center/cover;
+        position: absolute;
+        height: 50%;
+        
+        width: 100%;
+        z-index: -1;
+        opacity: 0.5;
+        
+    }
+    #clients{
+        flex-wrap: wrap;
+    
+    }
+    .client-item{
+        padding: 2px 34px 2px 2px ;
+    }
+    #client-section img{
+    width: 66px;
+    height: auto;
+  
+    }
+/* contact section */
+#contact{
+    position: relative;
+    height: 520px;
+    margin-top: 100px;
+}
+#contact::before{
+    content: "";
+    background:url(contact.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    
+ }
+
+
+/* footer section */
+    footer{
+        font-size: 1.5rem;
+
+}
+/* utility secti/on */
+    .h-primary{
+    font-size: 2rem;
+}
+
+    .btn{
+        padding: 4px 10px;
+        border: 2px solid rgb(241, 241, 241);
+        border-radius: 10px;
+        font-size: 1.5rem;
+        background-color: black;
+        color: white;
+        
+        margin: 10px 2px -96px 2px ;
+        cursor: pointer;
+        font-family: 'Indie Flower', cursive;
+    
+    }

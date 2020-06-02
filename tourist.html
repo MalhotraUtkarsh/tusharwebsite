@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour and travels</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        header::before {
+            background: url(background.jpg) no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 55%;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            opacity: 0.5;
+        }
+
+
+        .navbar {
+            list-style: none;
+            display: flex;
+            width: 55%;
+            padding: 2px 2px 2px 2px;
+            margin: 2px 2px 2px 300px;
+            font-size: 22px;
+        }
+
+        .navbar li {
+            padding: 2px 55px 2px 2px;
+            margin: 2px 2px 2px 2px;
+
+        }
+
+        .btn {
+            background-color: black;
+            color: white;
+            margin-right: 15px;
+            padding: 2px 10px 2px 10px;
+            font-size: 22px;
+            border: 2px solid black;
+            border-radius: 5px;
+            border-bottom-left-radius: 23px;
+            border-top-right-radius: 23px;
+
+        }
+
+        section {
+
+            text-align: center;
+
+            width: 90%;
+
+        }
+
+        h1 {
+            font-family: 'Baloo Bhaina 2', cursive;
+
+            padding: 2px 2px 2px 180px;
+            margin: 0px 2px 2px 2px;
+
+            font-size: 5rem;
+        }
+
+        h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 5rem;
+            color: greenyellow;
+
+            padding: 2px 50px 2px 50px;
+            margin: 100px 2px 2px 150px;
+        }
+
+        .searchbox {
+            width: 525px;
+            margin: 2px 2px 2px 200px;
+            padding: 12px 2px 12px 5px;
+            font-size: 20px;
+            border-bottom-left-radius: 23px;
+
+
+        }
+
+        .sear {
+            margin: 2px 2px 2px -6px;
+            padding: 12px 20px 12px 20px;
+            font-size: 20px;
+            font-weight: bold;
+            border-top-right-radius: 23px;
+            background-color: rgb(255, 81, 0);
+            border: 2px solid rgb(255, 81, 0);
+            cursor: pointer;
+}
+
+        #category {
+            margin: 2px 2px 2px -225px;
+            padding: 12px 20px 13px 20px;
+            font-size: 20px;
+            background-color: black;
+            color: white;
+        }
+
+        .images {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin-top: -30px;
+        }
+
+        .canada {
+            height: 300px;
+            width: 400px;
+            border: 2px solid black;
+            border-radius: 25px;
+
+        }
+
+        .india {
+            height: 300px;
+            width: 400px;
+
+            border: 2px solid black;
+            border-radius: 25px;
+
+        }
+
+        .italy {
+            height: 300px;
+            width: 400px;
+            border: 2px solid black;
+            border-radius: 25px;
+
+        }
+        h4{
+            text-align: center;
+            font-family: cursive;
+            width: 50%;
+            margin-left:390px ;
+            margin-top: 30px;
+            font-size: 3rem;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            font-family: cursive;
+            
+        }
+        .navbar li a:hover{
+            color: rgb(255, 81, 0);
+            font-size: 23px;
+        }
+        .images a:hover{
+            height: 301px;
+            width: 401px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navigation">
+            <ul class="navbar">
+                <li class="items"><a href="#">Home</a></li>
+                <li class="items"><a href="#">About</a></li>
+                <li class="items"><a href="#">Categories</a></li>
+                <li class="items"><a href="#">Listing</a></li>
+                <li class="items"><a href="#">Page</a></li>
+                <li class="items"><a href="#">Contact</a></li>
+                <button class="btn" id="signin">SignIn </button>
+                <button class="btn" id="Register">Register</button>
+            </ul>
+
+
+        </nav>
+    </header>
+    <section>
+        <h2>Explore the City</h2>
+        <h1>Discover Great Places</h1>
+        <input type="search" class="searchbox" placeholder="What Are you looking For?">
+        <select name="category" class="Categories" id="category">
+            <option value="select" selected>All Categories</option>
+            <option value="India">India</option>
+            <option value="Afghanisthan">Afghanisthan</option>
+            <option value="pak">Pakistan</option>
+            <option value="nepal">Nepal</option>
+            <option value="bangladesh">Bangladesh</option>
+            <option value="srilanka">Srilanka</option>
+            <option value="myanmar">Myanmar</option>
+        </select>
+        <button class="sear" id="search">Search</button>
+        <div><h4>Popular Locations</h4></div>
+    </section>
+    <div class="images">
+        <a class="img1"><img src="canada-hero-01-1550x804.jpg" class="canada"></a>
+        <a class="img2"><img src="india.jpg" class="india"></a>
+       <a class="img3"> <img src="20GorgeousSidetownsinItaly__HERO_shutterstock_688078159.jpg" class="italy"></a>
+
+
+    </div>
+
+</body>
+
+</html>

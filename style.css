@@ -1,0 +1,290 @@
+/*css Reset*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+    
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation Bar: logo and image */
+#logo{
+    margin: 11px 15px;
+}
+#logo img{
+    height: 52px;
+    width: 74px;
+    margin: 3px 22px;
+}
+
+/* Navigation Bar :List Style */
+#navbar{
+   position: sticky;
+   top: 0px;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 137%;
+    width: 100%;
+    margin: -22px 0px 0px 9px;
+    z-index: -1;
+    opacity: 0.8;
+    
+}
+#navbar ul li{
+    /* color: bisque; */
+    list-style: none;
+    padding-right: 25px;
+    border-radius: 20px;
+    font-size: 2rem;
+    
+}
+#navbar ul li a{
+    display: block;
+     text-decoration: none;
+     color: white;
+     font-weight: bold;
+     font-family: 'Indie Flower', cursive;
+}
+#navbar ul li a:hover{
+    color: black;
+    border-radius: 5px;
+    background-color: white;
+}
+
+/* Home section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 156px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background:url(back.PNG) no-repeat center center/cover;
+    position: absolute;
+    height: 70%;
+    
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1{
+    color: black;
+    text-align: center;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Patrick Hand', cursive;
+}
+/* Services section */
+#services{
+    margin: 2px 2px 2px 20px;
+    display: flex;
+}
+#services .box {
+    border: 2px solid green;
+    margin: auto;
+    display: block;
+    padding: 13px;
+    border-radius: 23px;
+    background-color: rgb(218, 206, 206);
+   }
+#services .box2 {
+    border: 2px solid green;
+    margin: auto;
+    display: block;
+    padding: 13px;
+    border-radius: 23px;
+    background-color: rgb(218, 206, 206);
+   }
+   #services .box3 {
+    border: 2px solid green;
+    margin: auto;
+    display: block;
+    padding: 13px;
+    border-radius: 23px;
+    background-color: rgb(218, 206, 206);
+   }
+#services .box img{
+    height: 156px;
+    margin: 2px 2px 5px 54px;
+    display: block;
+    border: 2px solid crimson;
+    border-radius: 23px;
+
+}
+#services .box2 img{
+    height: 156px;
+    margin: 2px 2px 5px 115px;
+    display: block;
+    border: 2px solid crimson;
+    border-radius: 23px;
+
+}
+#services .box3 img{
+    height: 156px;
+    margin: 2px 2px 5px 54px;
+    display: block;
+    border: 2px solid crimson;
+    border-radius: 23px;
+
+}
+
+#services .box p{
+    font-size: 1.4rem;
+    font-family: 'Patrick Hand', cursive;
+}
+#services .box2 p{
+    font-size: 1.4rem;
+    font-family: 'Patrick Hand', cursive;
+}
+#services .box3 p{
+    font-size: 1.4rem;
+    font-family: 'Patrick Hand', cursive;
+}
+
+/* client section */
+
+#client-section{
+    height: 344px;
+    margin-top: 45px;
+}
+
+#client-section::before{
+    content: "";
+    background:url(top-view-of-food-1640772.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 40%;
+    
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#clients img{
+    height: 100px;
+    
+}
+ /* Contact Section */
+ #contact{
+     position: relative;
+     height: 520px;
+     
+ }
+ #contact::before{
+    content: "";
+    background:url(contact.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    
+ }
+ #contact-box{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 5px;
+ }
+ #contact-box input{
+     width: 100%;
+     padding: 4px 10px 4px 4px;
+     border-radius: 10px;
+     font-size: 1.2rem;
+
+ }
+ #contact-box textarea{
+width: 100%;
+padding: 4px 10px 4px 4px;
+border-radius: 10px;
+font-size: 1.2rem;
+ }
+ #contact-box label{
+     font-size: 1.3rem;
+     font-weight: bold;
+ }
+ #contact-box form{
+     width: 40%;
+    
+ }
+ /* footer section */
+ footer{
+     background-color: black;
+     color: white;
+     margin-top: 50px;
+     height: 250px;
+     font-size: 3rem;
+ }
+
+/* utility classes */
+.h-primary{
+    font-size: 3rem;
+    padding: 15px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.heading2{
+    font-size: 2rem;
+    padding: 15px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid rgb(241, 241, 241);
+    border-radius: 10px;
+    font-size: 2rem;
+    background-color: black;
+    color: white;
+    
+    margin: 13px 2px -96px 2px ;
+    cursor: pointer;
+    font-family: 'Indie Flower', cursive;
+
+}
+.center{
+    text-align: center;
+}
+.ourservice{
+    font-size: 3rem;
+    padding: 15px;
+    margin: 215px 2px 2px 2px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+    
